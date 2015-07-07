@@ -1,0 +1,33 @@
+<table style="width: 100%; height: 100%;">
+            <div id="kml_lejeri" style="width: 100%; height: 800px;"></div>
+</table>
+<script type="text/javascript">
+       // Kreiranje  mape
+			var map = new OpenLayers.Map("kml_lejeri");
+    // Dodavanje lejera 
+			var layer = new OpenLayers.Layer.OSM("OpenStreetMap");
+			map.addLayer(layer);
+	// Za kontrolu lejera i centrisanje mape
+    map.addControl(new OpenLayers.Control.LayerSwitcher());
+    map.setCenter(new OpenLayers.LonLat(2209994.4,5660626.0), 3); 
+	map.addControl(new OpenLayers.Control.PanZoomBar());
+	map.addControl(new OpenLayers.Control.OverviewMap());
+	map.addControl(new OpenLayers.Control.MousePosition());
+
+	//Dodavanje kml
+			var kml_Layer = new OpenLayers.Layer.Vector("KML", {
+            protocol: new OpenLayers.Protocol.HTTP({
+                url: "http://www.filedropper.com/polygon_1",
+                format: new OpenLayers.Format.KML({
+                extractStyles: true,
+                extractAttributes: true
+            })
+            }),
+            strategies: [new OpenLayers.Strategy.Fixed()],
+        });
+		map.addLayer(kml_Layer);       
+</script>
+     
+
+
+
