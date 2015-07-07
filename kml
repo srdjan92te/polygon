@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><Folder><name>polygon</name>
+<Schema name="polygon" id="polygon">
+	<SimpleField name="id" type="int"></SimpleField>
+	<SimpleField name="AREA" type="int"></SimpleField>
+	<SimpleField name="LON" type="float"></SimpleField>
+	<SimpleField name="LAT" type="float"></SimpleField>
+</Schema>
+  <Placemark>
+		<name>polygon</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#polygon">
+		<SimpleData name="id">1</SimpleData>
+		<SimpleData name="AREA">1500</SimpleData>
+		<SimpleData name="LON">19.85</SimpleData>
+		<SimpleData name="LAT">45.25</SimpleData>
+	</SchemaData></ExtendedData>
+       <Polygon><outerBoundaryIs><LinearRing><coordinates>19.852983525241999,45.250236102808799 19.852987585009767,45.250233244684317 19.852987585009767,45.250233244684317 19.853369203180119,45.250353285788592 19.853328605502426,45.250381866966499 19.853620908781842,45.250479042863802 19.853710223672778,45.250341853313401 19.853040361990775,45.250138926495843 19.852983525241999,45.250236102808799</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#polygon">
+		<SimpleData name="id">2</SimpleData>
+		<SimpleData name="AREA">1145</SimpleData>
+		<SimpleData name="LON">19.85</SimpleData>
+		<SimpleData name="LAT">45.25</SimpleData>
+	</SchemaData></ExtendedData>
+       <Polygon><outerBoundaryIs><LinearRing><coordinates>19.853937570667878,45.250484759087882 19.854505938155636,45.250661961748882 19.854570894439945,45.250570502379979 19.853986287881114,45.25038758320035 19.853937570667878,45.250484759087882</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#polygon">
+		<SimpleData name="id">3</SimpleData>
+		<SimpleData name="AREA">6030</SimpleData>
+		<SimpleData name="LON">19.85</SimpleData>
+		<SimpleData name="LAT">45.25</SimpleData>
+	</SchemaData></ExtendedData>
+       <Polygon><outerBoundaryIs><LinearRing><coordinates>19.852922628725455,45.249981729166983 19.852784596621284,45.249930282673951 19.852614086374956,45.250176082164543 19.852086316564897,45.250027459343883 19.852386739379853,45.249627319047562 19.852719640336968,45.249724496235849 19.85279271615682,45.249627319047562 19.852289304953381,45.249455829486202 19.851850850034253,45.250090338277012 19.851980762602885,45.250130352107298 19.851972643067342,45.250170365909405 19.852061957958281,45.250176082164543 19.852086316564897,45.250170365909405 19.852143153313673,45.250187514673094 19.852143153313673,45.250221812184968 19.852232468204605,45.250238960933132 19.852281185417844,45.250227528434927 19.852459815199705,45.250284690902923 19.852476054270785,45.250341853313401 19.85253289101956,45.25036471826148 19.852581608232796,45.250318988356113 19.852687162194812,45.25036471826148 19.852719640336968,45.250261825922635 19.852776477085744,45.250261825922635 19.852825194298983,45.250181798419106 19.852808955227903,45.250170365909405 19.852841433370056,45.250118919587237 19.852898270118835,45.250118919587237 19.852914509189912,45.250078905748886 19.852882031047756,45.250056040685756 19.852922628725455,45.249981729166983</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder></Document></kml>
